@@ -1,0 +1,148 @@
+
+config dnsmasq
+	option domainneeded '1'
+	option localise_queries '1'
+	option rebind_protection '1'
+	option rebind_localhost '1'
+	option local '/lan/'
+	option domain 'lan'
+	option expandhosts '1'
+	option authoritative '1'
+	option readethers '1'
+	option leasefile '/tmp/dhcp.leases'
+	option resolvfile '/tmp/resolv.conf.d/resolv.conf.auto'
+	option nonwildcard '1'
+	option localservice '1'
+	option ednspacket_max '1232'
+	option localuse '1'
+	list server '127.0.0.1#6053'
+	option noresolv '0'
+	option port '53'
+
+config dhcp 'lan'
+	option interface 'lan'
+	option start '100'
+	option limit '150'
+	option leasetime '12h'
+	option dhcpv4 'server'
+	option ra 'server'
+	option ra_slaac '1'
+	list ra_flags 'managed-config'
+	list ra_flags 'other-config'
+	list dhcp_option '6,192.168.1.1'
+
+config dhcp 'wan'
+	option interface 'wan'
+	option ignore '1'
+
+config odhcpd 'odhcpd'
+	option maindhcp '0'
+	option leasefile '/tmp/hosts/odhcpd'
+	option leasetrigger '/usr/sbin/odhcpd-update'
+	option loglevel '4'
+
+config host
+	option name 'R7000'
+	option dns '1'
+	option mac 'e4:f4:c6:05:f5:72'
+	option ip '192.168.1.2'
+	option leasetime 'infinite'
+
+config host
+	option name 'DSM'
+	option dns '1'
+	option mac '00:11:32:f1:9a:68'
+	option ip '192.168.1.3'
+	option leasetime 'infinite'
+
+config host
+	option name '8700K'
+	option dns '1'
+	option mac '18:31:bf:26:14:2a'
+	option ip '192.168.1.99'
+	option leasetime 'infinite'
+
+config host
+	option name 'vivo'
+	option dns '1'
+	option mac '70:78:8b:2f:94:40'
+	option ip '192.168.1.98'
+	option leasetime 'infinite'
+
+config host
+	option dns '1'
+	option ip '192.168.1.97'
+	option leasetime 'infinite'
+	option name 'GoogleTV'
+	option mac '14:ae:85:70:40:ea'
+
+config host
+	option dns '1'
+	option ip '192.168.1.96'
+	option leasetime 'infinite'
+	option mac '98:e8:fa:35:bb:25'
+	option name 'Switch'
+
+config srvhost
+	option srv '_vlmcs._tcp'
+	option target 'OpenWrt'
+	option port '1688'
+	option class '0'
+	option weight '100'
+
+config host
+	option dns '1'
+	option mac '88:97:46:0a:ae:8d'
+	option ip '192.168.1.94'
+	option leasetime 'infinite'
+	option name 'KaoXiang_ChaPai'
+
+config host
+	option dns '1'
+	option mac '88:97:46:0e:86:41'
+	option ip '192.168.1.93'
+	option leasetime 'infinite'
+	option name 'WeiBoLu_ChaPai'
+
+config host
+	option dns '1'
+	option mac '54:48:e6:02:73:4f'
+	option ip '192.168.1.92'
+	option leasetime 'infinite'
+	option name 'Opple-Light'
+
+config host
+	option dns '1'
+	option mac '64:90:c1:c9:5d:e6'
+	option ip '192.168.1.91'
+	option leasetime 'infinite'
+	option name 'YouYanJi'
+
+config host
+	option dns '1'
+	option mac '54:ef:44:2a:e2:09'
+	option ip '192.168.1.90'
+	option leasetime 'infinite'
+	option name 'WangGuan'
+
+config host
+	option dns '1'
+	option mac '34:ab:95:24:1e:4d'
+	option ip '192.168.1.89'
+	option leasetime 'infinite'
+	option name 'DianNaoKaiJiKa'
+
+config host
+	option dns '1'
+	option mac '88:2d:53:99:b4:21'
+	option ip '192.168.1.88'
+	option leasetime 'infinite'
+	option name 'XiaoDu'
+
+config host
+	option dns '1'
+	option mac '04:78:63:e9:48:f2'
+	option ip '192.168.1.87'
+	option leasetime 'infinite'
+	option name 'ReShuiQi'
+
