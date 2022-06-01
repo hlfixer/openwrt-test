@@ -1,0 +1,22 @@
+
+config ddns 'global'
+	option ddns_dateformat '%F %R'
+	option ddns_loglines '250'
+	option upd_privateip '0'
+
+config service 'oray'
+	option service_name 'oray.com'
+	option enabled '1'
+	option lookup_host 'hlfixer.gicp.net'
+	option domain 'hlfixer.gicp.net'
+	option username 'hlfixer'
+	option password 'zcl100256'
+
+config service '3322'
+	option service_name '3322.org'
+	option enabled '1'
+	option lookup_host 'hlfixer.f3322.net'
+	option domain 'hlfixer.f3322.net'
+	option username 'hlfixer'
+	option password 'zcl100256'
+

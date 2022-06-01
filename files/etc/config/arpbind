@@ -1,0 +1,91 @@
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.2'
+	option macaddr 'e4:f4:c6:05:f5:72'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.3'
+	option macaddr '00:11:32:f1:9a:68'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.99'
+	option macaddr '18:31:bf:26:14:2a'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.98'
+	option macaddr '00:c3:0a:e2:51:d0'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.97'
+	option macaddr '14:ae:85:70:40:ea'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.96'
+	option macaddr '98:e8:fa:35:bb:25'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.94'
+	option macaddr '88:97:46:0a:ae:8d'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.93'
+	option macaddr '88:97:46:0e:86:41'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.92'
+	option macaddr '54:48:e6:02:73:4f'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.91'
+	option macaddr '64:90:c1:c9:5d:e6'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.90'
+	option macaddr '54:ef:44:2a:e2:09'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.89'
+	option macaddr '34:ab:95:24:1e:4d'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.88'
+	option macaddr '88:2d:53:99:b4:21'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.87'
+	option macaddr '04:78:63:e9:48:f2'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.86'
+	option macaddr '92:0a:68:ea:43:a8'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.85'
+	option macaddr '70:78:8b:2f:94:40'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.84'
+	option macaddr '34:cf:f6:13:c9:6e'
+
+config arpbind
+	option ifname 'br-lan'
+	option ipaddr '192.168.1.83'
+	option macaddr 'b8:fc:9a:3e:d2:b4'
+
